@@ -1,11 +1,18 @@
-#title {
-    color: rgb(186, 133, 9);
-    font-family: "Sarabun", sans-serif;
-}
-
 body{
     background: linear-gradient(to bottom);
     font-size: 1.15em;
     text-align: justify;
     font-family: "Lato", sans-serif;
 }
+
+
+.title {
+    color: rgb(49, 67, 157);
+    font-family: "Sarabun", sans-serif;
+}
+
+.subtitle{
+    color: rgb(0, 181, 247);
+    font-family: "Sarabun", sans-serif;
+}
+
