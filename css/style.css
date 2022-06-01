@@ -12,7 +12,7 @@ body{
 .title {
     color: rgb(27, 0, 76);
     font-family: "Lato", sans-serif;
-    text-shadow: 0 0 2px rgb(255, 255, 255);
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.624);
     font-size: 6em;
     font-weight: 800;
     display: inline;
@@ -35,7 +35,7 @@ body{
     text-shadow: 0 0 2px rgb(255, 255, 255);
     font-family: "Sarabun", sans-serif;
     font-size: 1.5em;
-    margin: 0 9em 0 9em;
+    margin: 0 20% 0 20%;
     text-align: left;
 }
 
