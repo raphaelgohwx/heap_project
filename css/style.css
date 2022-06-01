@@ -15,15 +15,16 @@ body{
     text-shadow: 0 0 2px rgb(255, 255, 255);
     font-size: 6em;
     font-weight: 800;
-    
+    display: inline;
 }
 
-.subtitle{
+#subtitle{
     color: rgb(0, 181, 247);
     text-shadow: 0 0 2px rgb(255, 0, 225);
     font-size: 1.5em;
     font-weight: 600;
     font-family: "Sarabun", sans-serif;
+    text-align: center;
 }
 
 
@@ -34,6 +35,8 @@ body{
     text-shadow: 0 0 2px rgb(255, 255, 255);
     font-family: "Sarabun", sans-serif;
     font-size: 1.5em;
+    margin: 0 9em 0 9em;
+    text-align: left;
 }
 
 #link{
@@ -49,6 +52,16 @@ body{
 #login-img{
     height: 30%;
     width: 60%;
-
+    /* border: size style color; */ 
+    border: 2px double rgba(3, 104, 237, 0.563);
+    text-align: center;
+    /* padding: 20px; */
+    /* padding-right: 20px;  */
+    /* margin: 80px 40px; */
+    /* float: left; */
+    /* display: none; */
+    /* display: inline-block; */
+    /* display: inline; */
 }
 
+/* 3hrs:26mins */
