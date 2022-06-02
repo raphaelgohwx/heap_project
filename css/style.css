@@ -32,7 +32,7 @@ body{
 .fill-form{
     /* color: rgb(117, 189, 216); */
     color :rgb(27, 0, 76);
-    text-shadow: 0 0 2px rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgb(255, 255, 255);
     font-family: "Sarabun", sans-serif;
     font-size: 1.5em;
     margin: 0 20% 0 20%;
@@ -47,12 +47,13 @@ body{
 #button{
     font-size: 2em;
     text-transform: capitalize;
+    margin: 0 0 0 30%;
 }
 
 #login-img{
     height: 30%;
     width: 60%;
-    /* border: size style color; */ 
+ 
     border: 2px double rgba(3, 104, 237, 0.563);
     text-align: center;
     /* padding: 20px; */
@@ -63,5 +64,37 @@ body{
     /* display: inline-block; */
     /* display: inline; */
 }
+.reset-create-account{
+    font-size: 0.8em;
+}
 
+
+.container{
+
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(74, 74, 74, 0.845),rgba(255, 255, 255, 0));
+    margin: 5% 10% 3% 10%;
+    /* height: 1000px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-item:hover{
+    font-size: 1.1em;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+.container-item{
+    /* background-color: aquamarine; */
+    /* background: none; */
+    color: antiquewhite;
+    
+    font-size: 1em;
+    text-align: center;
+    
+    width: 100px;
+    line-height: 50px;
+    margin: 10px; 
+}
 /* 3hrs:26mins */
