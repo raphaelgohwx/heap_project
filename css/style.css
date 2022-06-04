@@ -58,7 +58,7 @@ body{
     animation-timing-function: ease;
     /* animation-delay: 2s; */
     animation-iteration-count: infinite;
-    /* animation-duration:  */
+    
     /* padding: 20px; */
     /* padding-right: 20px;  */
     /* margin: 80px 40px; */
@@ -164,6 +164,12 @@ body{
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-duration:  */
+    animation: red-to-black 4s linear 0s infinite alternate;
+    -webkit-animation: red-to-black 4s linear 0s infinite alternate;
+    -moz-animation: red-to-black 4s linear 0s infinite alternate;
+    -ms-animation: red-to-black 4s linear 0s infinite alternate;
+    -o-animation: red-to-black 4s linear 0s infinite alternate;
+
 }
 @keyframes red-to-black{
     /* 0% {color: rgb(255, 102, 0);
@@ -179,8 +185,6 @@ body{
     } */
     0% {border: 2px double rgba(255, 102, 0, 0.563);
     }
-
-
     50% {  border: 2px double rgba(174, 0, 255, 0.563);
 
     }
