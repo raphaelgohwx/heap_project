@@ -43,6 +43,10 @@ body{
     margin: 0 20% 0 20%;
     text-align: left;
 }
+#textboxid{
+    height:45px;
+    font-size:14pt;
+}
 
 .submit-button{
     margin: 30px 20px;
