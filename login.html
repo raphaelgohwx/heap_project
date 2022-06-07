@@ -5,11 +5,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Sarabun&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Welcome</title>
-    <h1 class="title" id="logo">STONKIFY</h1> <br>
-</head>
-
-<body>
-    <div class="container">
+    <header>
+    <div class="container" >
         <div class="container-item" style="order: 5; flex: 1 1 100px;">Contact Us</div>
         <div class="container-item" style="order: 4; flex: 1 1 100px;">FAQs & Help</div>
         <div class="container-item" style="order: 3; flex: 1 1 100px;">Our Team</div>
@@ -17,8 +14,14 @@
         <div class="container-item" style="order: 1; flex: 1 1 100px;">Home</div>
         <!-- <div class="container-item" style="order: 1; flex: 1 1 100px; align-self: flex-start;">Help</div> -->
     </div>
+    <div id="subtitle">BUY TOGETHER SAVE MORE</div> <br>
+    </header>
+</head>
 
-    <span id="subtitle">BUY TOGETHER SAVE MORE</span> <br>
+<body>
+
+
+    
     <img id='login-img' src="https://www.printcity.com.sg/wp-content/uploads/2018/02/apparels-printing.jpg" alt=""> <br>
     <div class="fill-form">
         <table>
@@ -27,7 +30,7 @@
                     Username:
                 </td>
                 <td>
-                    <input type="text" name="username">
+                    <input type="text" name="username" class="text">
                 </td>
             </tr>
 
@@ -36,13 +39,11 @@
                     Password:
                 </Td>
                 <td>
-                    <input type="password" name='password'>
+                    <input type="password" name='password' class="text">
                 </td>
+                <td><input class="submit-button" type="submit" name='login' value='login' /></td>
             </tr>
         </table>
-
-   
-        <input class="submit-button" type="submit" name='login' value='login' /> <br><br>
         <div class="reset-create-account">
             Forgot your password? Click <a id="link" href="reset.html">here</a> <br>
             New user? Click <a id="link" href="register.html">here</a>
