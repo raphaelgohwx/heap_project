@@ -27,7 +27,8 @@ body{
     text-shadow: 0 0 1px rgb(242, 238, 238);
     font-size: 5em;
     font-weight: 600;
-    font-family: "Apple Chancery", cursive;
+    font-family: "Sarabun", sans-serif;
+    font-style: italic;
     text-align: center;
     margin: 0px -8px 0px -8px;
 
@@ -40,7 +41,7 @@ body{
     font-family: "Sarabun", sans-serif;
     font-size: 2em;
     margin: 0 20% 0 20%;
-    text-align: center;
+    text-align: left;
 }
 
 .submit-button{
