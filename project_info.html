@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shirt Info</title>
+        <!-- <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/project-info.css"> -->
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <div class="container-fluid" style="margin-bottom: 100px;">
+            <div class="row">
+                <!-- This is for the logo! -->
+                <div class="col d-none d-sm-block col-md-2 col-lg-2 col-xl-1 col-xxl-1" style="background-color: grey;">
+                    <h3>STONKIFY</h3>
+                </div>
+                <!-- This is for the rest of the nav bar! -->
+                <div class="col col-md-10 col-lg-10 col-xl-11 col-xxl-11">
+                    <div class="row text-center" style="background-color: rgb(0, 37, 88)">
+                        <div class="col-sm ">
+                            <h1><a href="#" class="text-white text-decoration-none">Home</a></h1>
+                        </div>
+                        <div class="col-sm">
+                            <h1><a href="#" class="text-white text-decoration-none">About Us</a></h1>
+                        </div>
+                        <div class="col-sm">
+                            <h1><a href="#" class="text-white text-decoration-none">Our Team</a></h1>
+                        </div>
+                        <div class="col-sm">
+                            <h1><a href="#" class="text-white text-decoration-none">FAQs and Help</a></h1>
+                        </div>
+                        <div class="col-sm">
+                            <h1><a href="#" class="text-white text-decoration-none">Contact Us</a></h1>
+                        </div>
+                    </div>
+                    <div class="row text-center d-none d-sm-block" style="background-color: rgb(194, 142, 0)">
+                        <h3>BUY TOGETHER SAVE MORE</h3>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <!-- This is for the slideshow! -->
+        <div class="container">
+            <div class="row">
+                <div id="shirt-pics" class="carousel slide carousel-fade col-md-6" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#shirt-pics" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#shirt-pics" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <!-- Need to resize shirt pic!!!! -->
+                      <div class="carousel-item active img-fluid">
+                        <img src="img/shirt1.jpg" class="d-block w-100" alt="Picture 1">
+                      </div>
+                      <div class="carousel-item img-fluid">
+                        <img src="img/shirt2.jpg" class="d-block w-100" alt="Picture 2">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#shirt-pics" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#shirt-pics" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+
+                </div>
+            </div>
+        </div>
+        
+
+        <form>
+    
+
+            <div class="box">
+                Sizing
+            </div>
+
+            <div class="box">
+                Progress
+            </div>
+
+            <div class="box">
+                <h3>Description</h3>
+                <p>This is the description of the shirt. A quick brown fox jumps over the lazy dog.</p>
+                <h3>Price</h3>
+                <p>$10</p>
+                <h3>Closing Date</h3>
+                <p>1 July 2022</p>
+            </div>
+            
+            <div class="box">
+                Size:
+                <select name = "size">
+                    <option>--Select Size--</option>
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+                <br>
+                Quantity:
+                <select name = "qty">
+                    <option>--Select Quantity--</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </div>
+        
+            <div class="box">
+                <input type = "submit" name = "change" value = "Edit">
+                <input type = "submit" name = "commit" value = "Commit">
+            </div>
+
+        </div>
+        </form>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    </body>
+    <script src="js/slideshow.js"></script>
+</html>
