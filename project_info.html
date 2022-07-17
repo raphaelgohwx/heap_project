@@ -10,7 +10,6 @@
     </head>
 
     <body>
-        
 
         <nav class="navbar navbar-expand-lg navbar-dark text-white" style="background-color:rgb(0, 37, 88)">
             <a class="navbar-brand" href="#"><h1>Stonkify</h1></a>
@@ -59,14 +58,23 @@
           <p class="lead">200 people have already committed to this project! 100 more to go!</p>
         </div>
         
-        <nav class="nav nav-tabs">
-          <a class="nav-link active" href="#info" data-toggle="tab">Key Information</a>
-          <a class="nav-link" href="#pictures" data-toggle="tab">Shirt Pictures</a>
-          <a class="nav-link" href="#size" data-toggle="tab">Shirt Sizing</a>
-          <a class="nav-link" href="#commit" data-toggle="tab">Commit Now</a>
-        </nav>
-        <div class="tab-content px-2 pt-3">
-          <div class="tab-pane active nav-item" id="info">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="info-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Key Information</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="image-tab" data-bs-toggle="tab" data-bs-target="#image-tab-pane" type="button" role="tab" aria-controls="image-tab-pane" aria-selected="false">Shirt Images</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="sizing-tab" data-bs-toggle="tab" data-bs-target="#sizing-tab-pane" type="button" role="tab" aria-controls="sizing-tab-pane" aria-selected="false">Shirt Sizing</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="commit-tab" data-bs-toggle="tab" data-bs-target="#commit-tab-pane" type="button" role="tab" aria-controls="commit-tab-pane" aria-selected="false">Commit Now</button>
+          </li>
+          
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
             <h3>Price</h3>
             <p>$10 per shirt</p>
 
@@ -74,7 +82,8 @@
             <p>29 Jul 2022</p>
 
             <h3>Shirt Description</h3>
-            <p>This is the shirt description. The quick brown fox jumps over a lazy dog.
+            <p>This is the shirt description. 
+              The quick brown fox jumps over a lazy dog.
               The quick brown fox jumps over a lazy dog.
               The quick brown fox jumps over a lazy dog.
               The quick brown fox jumps over a lazy dog.
@@ -100,34 +109,34 @@
               By clicking commit and checking out, you agree with the project's return policy.
             </p>
           </div>
-          <div class="tab-pane nav-item" id="size">
-            <img src="https://cdn.shopify.com/s/files/1/0284/5558/files/sizing-chart-unisex-NEW_480x480.png?v=1643907571">
-          </div>
-          <!-- <div class="tab-pane" id="pictures">
-            <div id="shirt-pics" class="carousel slide" data-bs-ride="true">
+          <div class="tab-pane fade" id="image-tab-pane" role="tabpanel" aria-labelledby="image-tab" tabindex="0">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
               <div class="carousel-indicators">
-                <button type="button" data-bs-target="#shirt-pics" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#shirt-pics" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="img/shirt1.jpg" class="d-block w-100" alt="Front of Shirt" style="max-width: 500px; max-height: auto">
+                  <img src="img/shirt1.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="img/shirt2.jpg" class="d-block w-100" alt="Back of Shirt"  style="max-width: 500px; max-height: auto">
+                  <img src="img/shirt2.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#shirt-pics" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#shirt-pics" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-          </div> -->
-          <!-- <div class="tab-pane" id="commit">
+          </div>
+          <div class="tab-pane fade" id="sizing-tab-pane" role="tabpanel" aria-labelledby="sizing-tab" tabindex="0">
+            <img src="https://cdn.shopify.com/s/files/1/0284/5558/files/sizing-chart-unisex-NEW_480x480.png?v=1643907571">
+          </div>
+          <div class="tab-pane fade" id="commit-tab-pane" role="tabpanel" aria-labelledby="commit-tab" tabindex="0">
             <form>
               <div class="mb-3">
                 <label for="size" class="form-label">Shirt Size</label>
@@ -173,97 +182,9 @@
               </div>
               <button type="submit" class="btn btn-primary">Commit</button>
             </form>
-          </div> -->
+          </div>
         </div>
 
-        <!-- <div id="shirt-pics" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#shirt-pics" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#shirt-pics" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/shirt1.jpg" class="d-block w-100" alt="Front of Shirt" style="max-width: 500px; max-height: auto">
-            </div>
-            <div class="carousel-item active">
-              <img src="img/shirt2.jpg" class="d-block w-100" alt="Back of Shirt"  style="max-width: 500px; max-height: auto">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#shirt-pics" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#shirt-pics" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div> -->
-
-        <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="padding-right:60%">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/shirt1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/shirt2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/shirt1.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div> -->
-
-
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
-          </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">Hello</div>
-          <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="padding-right:60%">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="img/shirt1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/shirt2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/shirt1.jpg" class="d-block w-100" alt="...">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">1234</div>
-          <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
-        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
