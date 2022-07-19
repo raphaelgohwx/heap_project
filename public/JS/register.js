@@ -1,4 +1,6 @@
 function handle_form_submission()
 {
- res.redirect('static/login.html');
+    alert('Account created');
+    location.href = 'login.html';
+    return false;
 }
