@@ -3,7 +3,7 @@
 <html>
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Sarabun&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="/css/Bregister.css">
+        <link rel="stylesheet" type="text/css" href="../public/css/Bregister.css">
         <title>Registration</title>
         <header>
         <div class="container" >
@@ -20,6 +20,7 @@
 <div id="title"> REGISTER AS A BUYER</div> <br> <br>
 
 <div class="fill-form">
+    <form onsubmit="return handle_form_submission()">
     <table>
         <tr>
             <Td>
@@ -79,12 +80,20 @@
 
     </table>
 
+
 </div>
 
+<br><br>
+
+        <button 
+            type="submit"> Submit
+        
+        </button>
+    </form>
 
 
-<input class="submit-button" type="submit" name="submit" id="submitBtn"> <br>
 
+<br><br>
 <a href="login.html">Back to Login Page</a>
 
 </html>
