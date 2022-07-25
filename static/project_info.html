@@ -37,10 +37,10 @@
                       My Account
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#"><h3>My Profile Details</h3></a></li>
+                      <li><a class="dropdown-item" href="profile.html"><h3>My Profile Details</h3></a></li>
                       <li><a class="dropdown-item" href="#"><h3>Commits</h3></a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#"><h3>Logout</h3></a></li>
+                      <li><a class="dropdown-item" href="login.html"><h3>Logout</h3></a></li>
                     </ul>
                   </li>
                 </h3>
@@ -57,8 +57,13 @@
           <h1 class="display-4">Sample Project by Sample CCA</h1>
           <p class="lead">200 people have already committed to this project! 100 more to go!</p>
         </div>
-        
+
         <div class="container">
+          <div class="row my-3">
+            <form action="main_page.html">
+              <button type="submit" class="btn btn-primary" style="background-color:rgb(0, 37, 88)">Go back to Main Page</button>
+            </form>
+          </div>
           <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
               <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
@@ -137,7 +142,7 @@
                   <img src="https://cdn.shopify.com/s/files/1/0284/5558/files/sizing-chart-unisex-NEW_480x480.png?v=1643907571">
                 </div>
                 <div class="tab-pane fade" id="commit-tab-pane" role="tabpanel" aria-labelledby="commit-tab" tabindex="0">
-                  <form>
+                  <form action="main_page.html">
                     <div class="mb-3 row">
                       <label for="size" class="form-label">Shirt Size</label>
                       <select name = "size" id="size" class="form-select">
@@ -149,7 +154,7 @@
                         <option value="XXL">XXL</option>
                       </select>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 row">
                       <label for="qty" class="form-label">Number of Shirts</label>
                       <select name = "qty" id="qty" class="form-select">
                         <option value="1">1</option>
@@ -164,7 +169,7 @@
                         <option value="10">10</option>
                       </select>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 row">
                       Delivery Mode <br>
                       <div class="form-check">
                         <input class="form-check-input" type="radio" name="delivery" id="pickup" value="pickup">
