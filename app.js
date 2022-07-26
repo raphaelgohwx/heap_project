@@ -22,7 +22,7 @@ app.post('/',(req,res)=>{
     var con = mysql.createConnection({
         host: "localhost",
         user: "root",
-        password: "root",
+        password: "",
         database: "stonkify_testdb"
     });
     con.connect(function(err) {
@@ -36,7 +36,7 @@ app.post('/',(req,res)=>{
             console.log(value);
             if (value > 0){
                 console.log('hello');
-                res.redirect('public/Bregister.html'); 
+                res.redirect('public/main_page.html'); 
             }else{
                 res.redirect('public/login.html'); 
             }
